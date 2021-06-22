@@ -1,0 +1,32 @@
+{
+    "type": "mapping",
+    "version": "v1",
+
+    "mappings": [
+        {
+            "target_layer": "layer",
+            "filter": "*",
+            "mapped_fields":{
+                "ffield1":[
+                    {"to": "tfield1", "conversion": "toInt"}
+                ],
+                "ffield2":[
+                    {"to": "tfield2", "conversion": "toFloat"}
+                ],
+                "ffield3":[
+                    {"to": "tfield3", "conversion": "toDate"}
+                ],
+                "ffield4":[
+                    {"to": "tfield4", "conversion": "toGeometry:x"}
+                ],
+                "ffield5":[
+                    {"to": "tfield5", "conversion": "toGeometry:y"}
+                ]
+            },
+            "fixed_fields":{
+                "field1": "value",
+
+            }
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "mappings": [
+        {
+            "target_layer": "building",
+            "filter": "*",
+            "mapped_fields": {
+                "cnstrct_yr": [{"to": "ohm:from:date", "conversion": "toInt"}],
+                "heightroof": [{"to": "height", "conversion": "toInt"}]
+            },
+            "fixed_fields": {
+                "ohm:source": "XPNKS8QH",
+                "ohm:to:date": 3000
+            }
+        }
+    ]
+}
